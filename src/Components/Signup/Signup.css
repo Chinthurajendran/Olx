@@ -1,0 +1,41 @@
+.signupParentDiv {
+  border: 1px solid black;
+  width: 20%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+
+.signupParentDiv .input {
+  border: none;
+  border-bottom: 2px solid #002f34; /* Change to bottom border to match design */
+  outline: none; /* Remove default outline */
+  width: 100%; /* Ensure full width */
+  padding: 8px; /* Add padding for input */
+  margin-bottom: 15px; /* Space between inputs */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.signupParentDiv button {
+  width: 100%;
+  height: 48px;
+  border: none; /* Remove default border */
+  background-color: #002f34 !important; /* Set background color */
+  color: white !important; /* Text color */
+  font-weight: 900; /* Bold text */
+  transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+.signupParentDiv button:hover {
+  background-color: white !important; /* Change background on hover */
+  color: #002f34 !important; /* Change text color on hover */
+  border: 2px solid #002f34 !important; /* Add border on hover */
+}
+
+.signupParentDiv img {
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image horizontally */
+}

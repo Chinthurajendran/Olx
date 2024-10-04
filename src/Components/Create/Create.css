@@ -1,0 +1,58 @@
+.centerDiv {
+  border: 1px solid #002f34; /* Change border color to match button */
+  width: 400px; /* Set a fixed width for better layout */
+  padding: 40px; /* Adjust padding for better spacing */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center element */
+  border-radius: 8px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+.input {
+  width: 100%; /* Full width for better usability */
+  padding: 10px; /* Add padding for comfort */
+  margin: 10px 0; /* Add vertical spacing between inputs */
+  border: 2px solid #002f34; /* Solid border with matching color */
+  border-radius: 5px; /* Rounded corners for inputs */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+.input:focus {
+  border-color: #00575b; /* Change border color on focus */
+}
+
+.uploadBtn {
+  margin-top: 20px; /* Reduce margin for better spacing */
+  width: 100%; /* Full width for better usability */
+  height: 48px; /* Maintain height */
+  background-color: #002f34; /* Keep button color consistent */
+  color: whitesmoke; /* Text color */
+  font-weight: 900; /* Bold text */
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition */
+}
+
+.uploadBtn:hover {
+  background-color: white; /* Change background on hover */
+  color: #002f34; /* Change text color on hover */
+  border: 2px solid #002f34; /* Add border on hover */
+}
+
+.uploadedImage {
+  max-width: 100px; /* Limit maximum width */
+  max-height: 100px; /* Limit maximum height */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid #002f34; /* Border color */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition effects for hover */
+}
+
+.uploadedImage:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}

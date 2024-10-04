@@ -1,0 +1,111 @@
+.moreView {
+  margin: 16px; /* Uniform margin around the container */
+  padding: 24px 16px; /* Adjusted padding for better spacing */
+  background-color: #f5f7fa; /* Lighter background for a softer look */
+  border-radius: 8px; /* Increased border radius for rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.heading {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width */
+  margin-bottom: 16px; /* Space below the heading */
+}
+
+.heading :first-child {
+  font-size: 28px; /* Increased font size for main title */
+  color: #002f34; /* Text color */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.heading :last-child {
+  font-size: 14px; /* Font size for subtitle or info */
+  color: #002f34; /* Text color */
+  font-weight: 400; /* Regular weight for info */
+}
+
+.recommendations .cards {
+  display: flex; /* Flexbox for card layout */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 8px 0; /* Padding for top and bottom */
+  scrollbar-width: thin; /* Custom scrollbar for Firefox */
+}
+
+.moreView .cards {
+  white-space: nowrap; /* Prevent wrapping of cards */
+}
+
+.card {
+  margin-right: 15px; /* Space between cards */
+  padding: 16px; /* Padding inside the card */
+  max-width: 222px; /* Fixed width */
+  width: 100%; /* Full width of its container */
+  height: 290px; /* Fixed height */
+  display: inline-block; /* Display cards inline */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: 1px solid #ddd; /* Light border around cards */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: transform 0.2s; /* Smooth scale effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.card .favorite {
+  display: flex; /* Flexbox for favorite icon alignment */
+  justify-content: flex-end; /* Align to the right */
+  align-items: center; /* Center vertically */
+}
+
+.card .image {
+  display: flex; /* Flexbox for image alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 12px; /* Space below image */
+}
+
+.card .image img {
+  height: 100px; /* Fixed height for images */
+  width: auto; /* Auto width for aspect ratio */
+  max-width: 100%; /* Responsive to parent width */
+  object-fit: cover; /* Crop image to fit */
+}
+
+.card .content .rate {
+  margin-top: 10px; /* Space above the rating */
+  font-size: larger; /* Larger font for rating */
+  font-weight: bold; /* Bold text for emphasis */
+  color: #002f34; /* Text color */
+}
+
+.card .content .kilometer {
+  font-size: medium; /* Medium size for distance */
+  color: #666; /* Darker color for readability */
+}
+
+.card .content .name {
+  font-size: small; /* Small size for name */
+  color: #333; /* Darker text for better contrast */
+}
+
+.card .date {
+  display: flex; /* Flexbox for date alignment */
+  justify-content: flex-end; /* Align to the right */
+  font-size: small; /* Small font for date */
+  color: #999; /* Light gray for secondary info */
+}
+
+.recommendations {
+  margin: 16px 0; /* Margin above and below recommendations */
+}
+
+.recommendations .heading span {
+  font-size: 28px; /* Increased font size for recommendation title */
+  color: #002f34; /* Text color */
+  font-weight: 600; /* Semi-bold for emphasis */
+}
